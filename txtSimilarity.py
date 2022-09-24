@@ -246,7 +246,7 @@ class TextModel:
             print(self.name + ' is more likely to have come from ' + source2.name)
     
 def test():
-    """ your docstring goes here """
+    """ Simple testing on strings """
     source1 = TextModel('source1')
     source1.add_string('It is interesting that she is interested.')
 
@@ -258,7 +258,7 @@ def test():
     mystery.classify(source1, source2)  
     
 def run_tests():
-    """ """
+    """Uses example texts to compare different song lyrics to a collection of The Beatles and Katy Perry lyrics """
     source1 = TextModel('The Beatles')
     source1.add_file('beatles.txt')
 
