@@ -124,17 +124,17 @@ class TextModel:
             else:
                 self.sentence_lengths[length] += 1
         
-    # Add code to clean the text and split it into a list of words.
+    # clean the text and split it into a list of words.
         word_list = clean_text(s)
 
-    # Template for updating the words dictionary.
+    # updating the words dictionary.
         for w in range(len(word_list)):
             if word_list[w] not in self.words:
                 self.words[word_list[w]] = 1
             else:
                 self.words[word_list[w]] += 1
 
-    # Add code to update other feature dictionaries.
+    # update other feature dictionaries.
         for w in word_list:
             word_length = len(w)
             if word_length not in self.word_lengths:
